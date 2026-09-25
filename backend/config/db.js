@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const dbConnect=async()=>{
     try{
-        await mongoose.connect("mongodb+srv://Rupesh_knj:Prisha1612@node.lhpeyea.mongodb.net/ProductManagement?appName=Node");
+        await mongoose.connect(process.env.MONGO_URL);
         console.log("Database connected..");
         
     }
