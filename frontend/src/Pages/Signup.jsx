@@ -18,7 +18,7 @@ const Signup = () => {
   const register=async(e)=>{
       e.preventDefault();
       try{
-        const response=await axios.post("http://localhost:9999/api/auth/register",form)
+        const response=await axios.post("https://productmanagementsystem-px7c.onrender.com/api/auth/register",form)
         alert(response.data.message);
         setForm({
           name:"",
